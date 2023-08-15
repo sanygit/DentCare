@@ -1,0 +1,3167 @@
+html{
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #091E3E
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
+}
+
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+    background-color: #06A3DA;
+    color: white;
+    padding: 10px 12px;
+    font-size: 17px;
+    border-radius: 3px;
+}
+
+
+.inner{
+    max-width:1300px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+// top header starts here 
+.top-header{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    
+
+    background-color:#EEF9FF ;
+
+        .top-left{
+            margin-left: 15px;
+            width: 50%;
+            padding-left: 30px;
+            color: gray;
+
+            .fa{
+                color: #06A3DA;
+            }
+        }
+
+        .top-right{
+           
+            width: 30%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            text-align: center;
+            color: white;
+            background-color: #06A3DA;
+
+
+            .message-box{
+                
+                border-right:1px solid white;
+                height: 40px;
+                width: 50%;
+                position: relative;
+                
+ 
+            }
+
+            .message-box::after{
+                position: absolute;
+                content: "";
+                width: 50px;
+                height: 116%;
+                top: -6px;
+                left: -36px;
+                background: #06A3DA;
+                transform: skew(40deg);
+            }
+
+            .phone-box{
+                height: 40px;
+                text-align: center;
+                padding-right: 15px;
+                width: 50%;
+                
+            }
+        }
+}
+
+// header starts here 
+header{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    position: sticky;
+    top: 0px;
+    z-index: +1090;
+    background-color: white;
+
+        .logo{
+            float: left;
+            margin-left: 35px;
+            h2{
+                color: #06A3DA;
+                font-size:35px;
+                font-weight:bold;
+                font-family: "Jost",sans-serif;
+                margin-top: 0px;
+
+                .img{
+                    position: relative;
+                    top: 12px;
+                }
+            }
+        }
+
+        nav{
+
+            ul{
+                float: right;
+                
+
+                li{
+                    float: left;
+                    list-style: none;
+                    margin-right: 30px;
+                    a{
+                        text-decoration: none;
+                        color:#333;
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                    
+                    
+                    
+
+                    ul{
+                        position: absolute;
+                        right:200px;
+                        top: 100px;
+                        visibility: hidden;
+                        background-color: #EEF9FF;
+                        opacity: 0;
+                        transition: 0.5s;
+
+                        li{
+                            float: none;
+                           line-height:30px;
+                           display: block;
+                           border-bottom: 1px solid grey;
+                           padding: 10px 35px;
+                           text-align: center;
+                           
+                        }
+
+                    }
+
+
+                }
+
+
+                .pages:hover > ul{
+                    visibility: visible;
+                    transition: 0.5s ;
+                    opacity: 1;
+                    transform: translateY(-30px);
+                }
+
+
+
+                .appointment{
+                    background-color: #06A3DA;
+                    color: white;
+                    padding: 10px;
+                    transition: 0.5s ;
+                    
+                }
+
+                .appointment:hover{
+                    background-color: #F57E57;
+                    color: black;
+                }
+            }
+
+
+            
+        }
+
+        
+        span{
+            float: right;
+            display: none !important;
+
+        }
+}
+
+// Header end here 
+
+// Teeth Healthy Starts here
+
+.about-bg{
+    background: linear-gradient(rgba(9, 30, 62, .85), rgba(9, 30, 62, .85)), url(../img/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+    width:100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+
+    .about-text{
+        
+        h1{
+            color: white;
+            font-size: 60px;
+            font-family: "Jost",sans-serif;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+            font-family: "Jost",sans-serif;
+           
+        }
+
+        .cercle{
+
+            border-radius: 50%;
+            border: 3px solid white;
+            width: 15px;
+            height: 15px;
+            margin: 0px 5px;
+            display: inline-block;
+        }
+
+        .link{
+            text-align: center;
+        }
+
+    }
+}
+
+.container-fluid{
+    clear: both;
+}
+
+.item-1{
+    width: 100%;
+    height: 780px;
+    background: rgba(9, 30, 62, .85) url("../img/carousel-1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
+.item-2{
+    width: 100%;
+    height: 780px;
+    background: rgba(9, 30, 62, .85) url("../img/carousel-2.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
+.text{
+    position: relative;
+    text-align: center;
+    color: white;
+    top: 200px;
+    
+
+    h1{
+        font-family: "Jost",sans-serif;
+        font-size: 5rem;
+
+       
+
+    }
+
+    .bottom{
+        margin-top: -27px
+    }
+
+    h5{
+        font-size: 20px;
+        text-transform: uppercase;
+        
+    }
+
+    .blue{
+        padding: 18px 35px;
+        background-color: #06A3DA;
+        color: white;
+        text-decoration: none;
+        border-radius: 3px;
+        font-weight: 600;
+        transition: 0.5s;
+        
+    }
+
+    .blue:hover{
+        background-color: #F57E57;
+    }
+
+    .orange{
+        padding: 18px 45px;
+        background-color:#F57E57;
+        color: white;
+        text-decoration: none;
+        border-radius: 3px;
+        font-weight: 600;
+        margin-left: 10px;
+        transition: 0.5s;
+        
+    }
+
+    .orange:hover{
+        background: #06A3DA;
+    }
+}
+
+
+
+.top .owl-prev, .owl-next {
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-size: 1.7rem !important;
+    font-weight: 500 !important;
+  }
+  
+  .top .owl-nav {
+    color: white;
+  }
+  
+  .top .owl-prev {
+    left: -75px;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: -80px !important;
+    
+  }
+  
+  .top .owl-next {
+    right: -75px;
+    top: 42%;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px !important;
+  }
+  
+  .owl-theme .owl-nav [class*=owl-] {
+    margin: 100px;
+    background: none !important;
+  }
+
+  
+  
+//   Teeth Healthy end here
+.time{
+    position: relative;
+    bottom: 100px;
+    z-index: +1090;
+
+    .left{
+        width: 33.33%;
+        background-color: #06A3DA;
+        padding: 40px;
+        color: white;
+
+        .day{
+            float: left;
+            line-height: 40px;
+            font-weight:600 ;
+            
+        }
+
+        .timing{
+            float: right;
+            line-height: 40px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            
+        }
+
+        h3{
+            font-size: 25px;
+            font-weight: 600;
+            font-family: "Jost",sans-serif;
+            margin-bottom: 10px;
+        }
+
+       .btn{
+        clear: both;
+        margin-top: 10px;
+        cursor: pointer;
+
+            button{
+                width: 100%;
+                padding: 10px;
+                font-weight: 600;
+                border: 0px;
+                font-size: 17px;
+                color: #000;
+                background-color: #EEF9FF;
+                border-color: #EEF9FF;
+                font-family: "Jost",sans-serif;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+
+            button:hover{
+                background-color: #F57E57;
+                color: #000;
+            }
+       }
+    }
+
+    .center{
+        width: 33.33%;
+        background-color: #091E3E;
+        padding: 40px;
+        font-weight: 600;
+        font-family: "Jost",sans-serif;
+
+        .date, .select{
+            width: 100%;
+            display: block;
+            padding: 10px;
+            font-size: 17px;
+            margin-bottom: 18px;
+            color: grey;
+        
+            
+        }
+
+        button{
+            width: 100%;
+            display: block;
+            padding: 10px;
+            background-color: #EEF9FF;
+            border: 0px;
+            font-size: 17px;
+            font-weight: 600;
+            font-family: "Jost",sans-serif;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        button:hover{
+            background-color: #F57E57;
+            color: #000;
+        }
+        
+        h3{
+            color: white;
+            font-size: 30px;
+            font-weight: 600;
+            font-family: "Jost",sans-serif;
+            margin-bottom: 10px;
+        }
+
+ 
+    }
+
+    .right{
+        width: 33.33%;
+        background-color:#F57E57;
+        color: white;
+        padding: 40px;
+        
+        
+        h3{
+            font-family: "Jost",sans-serif;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        h1{
+            font-family: "Jost",sans-serif;
+            font-size: 35px;
+        }
+    }
+}
+// Teeth Healthy end here 
+
+// About starts here 
+
+.about-about{
+    margin-bottom: 60px;
+}
+
+.about-container{
+    padding-bottom: 110px;
+    .about-left{
+        width: 55%;
+
+            h5{
+                font-family: "Jost",sans-serif;
+                font-size: 20px;
+                text-transform: uppercase;
+                font-weight: 500;
+                position: relative;
+                color:#06A3DA;
+            }
+
+            h1{
+                font-family: "Jost", sans-serif;
+                font-size: 45px;
+                line-height: 55px;
+                margin: 25px 0px
+            }
+
+            h3{
+                font-style: italic;
+                color:#6B6A75;
+                font-family: "Jost",sans-serif;
+                font-size: 22px;
+                margin-bottom: 10px;
+                
+            }
+
+            p{
+                line-height: 25px;
+            }
+
+            h5::after{
+                content: "";
+                display: block;
+                background-color: #06A3DA;
+                width: 7%;
+                height: 3px;
+                position: absolute;
+                bottom: 13px;
+                left: 105px;
+            }
+
+            h5::before{
+                content: "";
+                display: block;
+                background-color:#F57E57;
+                width: 2%;
+                height: 3px;
+                position: absolute;
+                bottom: 13px;
+                left: 160px;
+            }
+
+
+            .achievment{
+                display: flex;
+                flex-wrap: wrap;
+                padding: 20px 0px;
+                font-family: "Jost",sans-serif;
+                font-weight: 600;
+                font-size: 18px;
+
+                .fa{
+                    background-color: #06A3DA;
+                    color: white;
+                    border-radius: 50%;
+                    padding: 5px;margin-bottom: 10px;
+                    font-size: 10px;
+                    
+                }
+                    .achievment-right{
+                        width: 50%;
+                        
+                    }
+
+                    .achievment-left{
+                        width: 50%;
+                       
+                    }
+            }
+
+            a{
+                padding:18px 50px;
+                background-color: #06A3DA;
+                color: white;
+                font-family: "Jost",sans-serif;
+                text-decoration: none;
+                font-weight: 500;
+                transition: 0.5s;
+                font-size: 18px;
+            }
+
+            a:hover{
+                color: #000;
+                background-color: #F57E57;
+            }
+
+
+    }
+
+    .about-right{
+        width: 40%;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+// About end here 
+
+// Certification starts here
+
+.change-2{
+    margin-bottom: 150px;
+}
+.container-fluid-2{
+    width: 100%;
+    background: rgba(9, 30, 62, .85) url("../img/carousel-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode:darken ;
+
+        .certification-left{
+            color: white;
+            width: 50%;
+            padding: 80px 50px 0px 0px;
+            
+                h1{
+                    font-family: "Jost",sans-serif;
+                    font-size: 45px;
+                    line-height: 50px;
+                    margin-bottom: 50px;
+                }
+
+                p{
+                    line-height: 25px;
+                  
+                }
+        }
+
+        .certifiation-right{
+            padding:80px 50px;
+            width: 50%;
+            background: rgba(6, 163, 218, .7);
+            
+
+                form{
+                    
+                    
+                    .select-service{
+                        width: 48%;
+                        height: 55px;
+                        padding: 15px;
+                        font-size: 16px;
+                        color: grey;
+                        margin-bottom: 14px;
+                        border: 0px;
+                        
+                        
+                    }
+
+                    h1{
+                        color: white;
+                        text-align: center;
+                        font-family: "Jost",sans-serif;
+                        font-size: 40px;
+                        margin-bottom: 14px;
+                        
+                        
+                    }
+
+                    .service1{
+                        margin-left: 10px;
+                    }
+
+                    .btn{
+                        width: 100%;
+                        height: 55px;
+                        background-color: #091E3E;
+                        border: 0px;
+                        font-size: 16px;
+                        color: white;
+                        text-align: center;
+                        font-family: "Jost",sans-serif;
+                        cursor: pointer;
+                        transition: 0.5s;
+                    }
+
+                    .btn:hover{
+                        background-color: #F57E57;
+                        color: #000;
+                    }
+                }
+        }
+}
+
+// Certification end here 
+
+// services starts here 
+
+.change{
+    margin-bottom: 80px;
+}
+
+
+.service-2{
+    padding: 0px 15px 40px !important;
+}
+.service{
+    padding: 80px 15px 40px;
+
+        .service-left{
+            width: 39.5%;
+           
+
+            img{
+                width: 100%;
+                position: relative;
+            }
+
+        }
+
+        .service-right{
+            width: 57%;
+            h1{
+                font-size: 50px;
+                font-family: "Jost", sans-serif;
+                line-height: 60px;
+                padding: 30px 0px 45px;
+                
+            }
+
+            h5{
+                font-family: "Jost",sans-serif;
+                font-size: 20px;
+                text-transform: uppercase;
+                font-weight: 500;
+                position: relative;
+                color:#06A3DA;
+            }
+
+            h5::after{
+                content: "";
+                display: block;
+                background-color: #06A3DA;
+                width: 7%;
+                height: 3px;
+                position: absolute;
+                bottom: 13px;
+                left: 150px;
+            }
+
+            h5::before{
+                content: "";
+                display: block;
+                background-color:#F57E57;
+                width: 2%;
+                height: 3px;
+                position: absolute;
+                bottom: 13px;
+                left: 210px;
+            }
+
+            
+
+        }
+
+        .main-left{
+            width: 47%;
+            transition: 0.5s;
+            
+
+            .img{
+                overflow: hidden;
+            }
+
+                img{
+                    width: 100%;
+                    display: block;
+                    transition: 0.5s;
+                }
+            
+                figure{
+                    
+                    figcaption{
+                        background-color: #EEF9FF;
+                        padding: 30px;
+                        margin-top: -4px;
+                        h3{
+                            margin-top: 0px;
+                            text-align: center;
+                            font-weight: 700;
+
+                        }
+                    }
+
+                }
+
+            .img:hover img{
+                transform: scale(1.2);
+            }
+
+        }
+
+        
+}
+
+.second-service-main{
+    padding-bottom: 80px;
+}
+
+.second-service-first{
+    width:25%;
+    img{
+        width: 100%;
+        display: block;
+        transition: 0.5s;
+    }
+
+    .img{
+        overflow: hidden;
+    }
+
+    .img:hover img{
+        transform: scale(1.2);
+    }
+
+    figcaption{
+        background-color: #EEF9FF;
+        padding: 30px;
+        margin-top: -4px;
+        
+        h3{
+            text-align: center;
+        }
+    }
+}
+
+
+.second-text{
+    width: 43%;
+    background-color: #06A3DA;
+    color: white;
+    text-align: center;
+    
+    
+    .content{
+
+         position: relative;
+         top: 60px;
+         padding: 0px 50px;
+        h2{
+            font-family: "Jost",sans-serif;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        p{
+            margin-bottom: 10px;
+        }
+
+        h1{
+            font-size: 30px;
+            font-family: "Jost",sans-serif;
+        
+
+        }
+    }
+}
+// services end here
+
+// Dental Checkup starts here
+
+.dental{
+    background: url("../img/carousel-1.jpg");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 80px;
+
+
+    .dental-text{
+        max-width: 750px;
+        background: rgba(6, 163, 218, .85);
+        margin: 0 auto;
+
+            .text-content{
+                padding: 60px 60px 100px;
+                color: white;
+                text-align: center;
+                
+                h1{
+                    font-size: 45px;
+                    font-family: "Jost",sans-serif;
+                }
+
+
+                p{
+                    margin-bottom: 30px;
+                }
+
+
+                .blue, .white{
+                    padding: 17px 35px;
+                    background-color:#091E3E;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 3px;
+                    font-weight: 600;
+                    transition: 0.5s;
+                    font-family: "Jost",sans-serif;
+                }
+
+                .white{
+                    background-color: white;
+                    color: #000;
+                    margin-left: 10px;
+                }
+
+            }
+    }
+
+
+}
+
+// Dental Checkup end here 
+
+// Pracing Plan starts here 
+
+.pracing-2{
+    padding: 0px 15px 80px !important;
+}
+
+.pracing{
+    padding: 80px 15px;
+
+    .pracing-content{
+        width: 35%;
+
+        h5{
+            font-family: "Jost",sans-serif;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 500;
+            position: relative;
+            color:#06A3DA;
+        }
+
+        
+        h5::after{
+            content: "";
+            display: block;
+            background-color: #06A3DA;
+            width: 12%;
+            height: 3px;
+            position: absolute;
+            bottom: 13px;
+            left: 150px;
+        }
+
+        h5::before{
+            content: "";
+            display: block;
+            background-color: #F57E57;
+            width: 4%;
+            height: 3px;
+            position: absolute;
+            bottom: 13px;
+            left: 209px;
+        }
+
+        h1{
+            font-size: 45px;
+            font-family: "Jost",sans-serif;
+            line-height: 55px;
+            margin: 30px 0px;
+        
+        }
+
+        p{
+            margin-bottom: 30px;
+            color: grey;
+        }
+
+        h2{
+            font-size: 35px;
+            font-family: "Jost",sans-serif;
+        }
+
+        h3{
+            color: #06A3DA;
+            font-size: 20px;
+            font-family: "Jost",sans-serif;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+    }
+
+    .carousel-content{
+        width: 55%;
+
+        .item-1-content{
+            background-color:#EEF9FF;
+            padding:30px 40px ;
+            border-bottom: 1px solid #06A3DA;
+
+                h1{
+                    background-color: #EEF9FF;
+                    padding: 5px 15px;
+                    font-family: "Jost", sans-serif;
+                    color: #06A3DA;
+                    text-align: center;
+                    width: 110px;
+                    margin: 0 auto;
+                    position: absolute;
+                    bottom: 240px;
+                    left: 110px;
+        
+                }
+
+            img{
+                position: relative;
+            }
+             
+
+            h3{
+                float: left;
+                margin-bottom: 10px;
+                font-size: 16px;
+                color:#333;
+                font-weight: 500;
+                
+            }
+
+
+            span{
+                float: right;
+            }
+
+            .text-content{
+                padding: 20px 0px;
+
+                a{
+
+                    padding: 10px 20px;
+                    background-color: #06A3DA;
+                    color: white;
+                    font-family: "Jost", sans-serif;
+                    position: relative;
+                    top: 40px;
+                    left: 60px;
+                    text-decoration: none;
+                }
+
+                .fa{
+                    color: #06A3DA;
+                }
+            }
+
+            h2{
+                text-align: center;
+                font-family: "Jost", sans-serif;
+                font-weight: 500;
+                border-bottom: 1px solid #06A3DA;
+                padding: 10px 0px;
+            }
+
+            
+
+
+ 
+        }
+
+        .top .owl-prev {
+            position: absolute;
+            top: 63%;
+            left: -127px;
+            font-size: 18px;
+            display: none;
+            transition: 1s;
+        }
+        
+        .top .owl-next {
+            position: absolute;
+            top: 47%;
+            right: -127px;
+            display: none;
+            transition: 1s;
+        }
+        
+        
+        .bi-arrow-left::before {
+            font-size: 20px;
+            background-color:#06A3DA;
+            padding: 10px;
+            color: white;
+            border-radius: 3px;
+        }
+        
+        .bi-arrow-right::before {
+            font-size: 20px;
+            background-color:#06A3DA;
+            padding: 10px;
+            color: white;
+            border-radius: 3px;
+        }
+
+        .top:hover .owl-prev{
+           display: block;
+            
+        }
+
+        .top:hover .owl-next{
+            display: block;
+        }
+    }
+}
+
+
+
+  
+
+// Pracing Plan end here 
+
+// Testimonial starts here 
+
+.testimonial-testimonial{
+    margin-bottom: 150px !important;
+}
+
+.testimonial{
+    width: 100%;
+    background: url("../img/carousel-2.jpg");
+    margin-bottom: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 80px;
+    margin-bottom: 80px;
+
+    .testimonial-content{
+        max-width:750px;
+        margin: 0 auto;
+        background: rgba(6, 163, 218, .85);
+        padding: 60px 60px 60px;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+
+
+        .img{
+            display: flex;
+            justify-content: center;
+            img{
+                max-width: 100px;
+                min-width: 50px;
+            }
+        }
+
+        p{
+            margin: 20px 0px;
+            font-size: 17px;
+            line-height: 25px;
+        }
+
+        h3{
+            display: inline-block;
+            border-top: 0.5px solid rgba(240, 229, 229, 0.507);
+            padding: 10px 0px 5px;
+            font-size: 20px;
+            font-family: "Jost", sans-serif;
+           
+        }
+
+        .top-1 .owl-prev{
+            position: absolute;
+            top: 6%;
+            left: -180px;
+            font-size: 18px;
+        }
+        
+        .top-1 .owl-next {
+            position: absolute;
+            right: -175px;
+            top: 6%;
+        }
+        
+        
+        .bi-arrow-left::before {
+            font-size: 20px;
+            background-color:#06A3DA;
+            padding: 10px;
+            color: white;
+            border-radius: 3px;
+        }
+        
+        .bi-arrow-right::before {
+            font-size: 20px;
+            background-color:#06A3DA;
+            padding: 10px;
+            color: white;
+            border-radius: 3px;
+        }
+
+    }
+}
+
+// Testimonial end here 
+
+// Team Starts here 
+
+.team{
+    padding-bottom: 110px;
+
+        .team-text{
+            width: 31%;
+            background-color: #EEF9FF;
+            margin-bottom: 45px;
+            padding: 50px;
+
+            h5{
+                font-family: "Jost",sans-serif;
+                font-size: 20px;
+                text-transform: uppercase;
+                font-weight: 500;
+                position: relative;
+                color:#06A3DA;
+            }
+    
+            
+            h5::after{
+                content: "";
+                display: block;
+                background-color: #06A3DA;
+                width: 17%;
+                height: 3px;
+                position: absolute;
+                bottom: 13px;
+                left: 138px;
+            }
+    
+            h5::before{
+                content: "";
+                display: block;
+                background-color: #F57E57;
+                width: 5%;
+                height: 3px;
+                position: absolute;
+                bottom: 13px;
+                left: 195px;
+            }
+
+            h1{
+                font-family: "Jost",sans-serif;
+                font-size: 45px;
+                line-height: 50px;
+                margin: 15px 0px
+            }
+
+            .btn{
+                    margin-top: 40px;
+                a{
+                    padding: 15px 40px;
+                    text-decoration: none;
+                    color: white;
+                    background-color: #06A3DA;
+                    font-family: "Jost", sans-serif;
+                    font-size: 17px;
+                    border-radius: 3px;
+                    transition: 0.5s;
+
+                }
+
+                a:hover{
+                    background-color: #F57E57;
+                    color: black;
+                }
+            }
+        }
+
+        .team-1{
+            width: 31%;
+            margin-bottom: 45px;
+
+            img{
+                width: 100%;
+                display: block;
+                transition: 0.5s;
+            }
+
+            .img{
+                position: relative;
+                overflow: hidden;
+            }
+
+            .img:hover img{
+                transform: scale(1.2);
+                cursor: pointer;
+            }
+
+            ul{
+                background-color: #EEF9FF;
+                float: left;
+                position: absolute;
+                padding: 15px 5px;
+                margin-top: -26px;
+                display: flex;
+                align-items: center;
+                margin-left: 93px;
+                
+                    li{
+                        list-style: none;
+                        float: left;
+                        text-align: center;
+                        background-color: #EEF9FF;
+
+                        a{
+                            color: white;
+                            background-color: #06A3DA;
+                            margin-left: 0px;
+                            padding: 5px 5px;
+                            margin: 0px 5px;
+                            font-size: 18px;
+                            border-radius: 3px;
+                            transition: 0.5s;
+                        }
+
+                        a:hover{
+                            background-color: #F57E57;
+                            color: black;
+                        }
+                    }
+
+                    .fa{
+                        width: 30px;
+                        height: 30px;
+                    }
+            }
+
+            .img-text{
+                background-color: #EEF9FF;
+                clear: both;
+                margin-top: -3px;
+                padding: 40px;
+                text-align: center;
+
+                h3{
+                    font-family: "Jost", sans-serif;
+                    font-size: 25px;
+                    margin-bottom: 5px;
+                }
+
+                p{
+                    color: #06A3DA;
+                }
+            }
+        }
+}
+// Team Starts here 
+
+
+// Details starts here 
+
+.bottom{
+    margin-top: 80px;
+}
+
+.detail{
+
+    .form{
+
+        background-color: #06A3DA;
+        width: 100%;
+        padding: 40px;
+        position: relative;
+        bottom: 70px;
+    
+        .form-inner{
+            max-width: 650px;
+            margin: 0 auto;
+            text-align: center;
+    
+            .email{
+                width: 79%;
+                height: 60px;
+                border: 0px;
+                padding: 0px 20px;
+                color: grey;
+                font-size: 17px;
+            }
+    
+            .submit{
+                width: 20%;
+                height: 60px;
+                color: #fff;
+                background-color: #091E3E;
+                border: 0px;
+                margin-left: -5px;
+                color: white;
+                font-size: 17px;
+            }
+        }
+    
+    
+    }
+    width: 100%;
+    background: #091E3E;
+
+    .same{
+        padding: 0px 15px 80px
+
+        
+    }
+    .items{
+        width: 22%;
+
+        ul{
+            list-style: none;
+        }
+
+        .float{
+            float: left;
+            
+            li{
+                float: left;
+                margin-right: 10px;
+                text-align: center;
+            
+                .fa{
+                    width: 30px;
+                    background-color: #06A3DA;
+                    color: white;
+                    padding: 12px 20px;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 18px;
+                    border-radius: 3px;
+                    transition: 0.5s;
+                }
+
+                .fa:hover{
+                    background-color: #F57E57;
+                    color: #000;
+                }
+
+            }
+        }
+
+        h2{
+            font-family: "Jost", sans-serif;
+            font-size:25px;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            line-height: 35px;
+            font-size: 16px;
+            transition: 0.5s;
+        }
+
+        a:hover{
+            letter-spacing: 2px;
+        }
+
+        .bi{
+            color: #06A3DA;
+        }
+    }
+}
+
+// Details end here 
+
+// contact starts here 
+.contact{
+    margin-bottom: 145px;
+
+    .left-text{
+        width: 32%;
+        background-color: #EEF9FF  !important;
+        padding: 50px;
+        
+
+        h5{
+            font-family: "Jost",sans-serif;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 500;
+            position: relative;
+            color:#06A3DA;
+        }
+
+        
+        h5::after{
+            content: "";
+            display: block;
+            background-color: #06A3DA;
+            width: 17%;
+            height: 3px;
+            position: absolute;
+            bottom: 13px;
+            left: 138px;
+        }
+
+        h5::before{
+            content: "";
+            display: block;
+            background-color: #F57E57;
+            width: 5%;
+            height: 3px;
+            position: absolute;
+            bottom: 13px;
+            left: 195px;
+        }
+
+        h1{
+            font-family: "Jost",sans-serif;
+            font-size: 40px;
+            line-height: 50px;
+            padding: 20px 0px;
+        }
+
+        h4{
+            font-size: 20px;
+            font-family: "Jost",sans-serif;
+        }
+
+        p{
+            font-size: 17px;
+        }
+
+        .bi{
+            color: #06A3DA;
+            font-size: 30px;
+            position: relative;
+            top: 6px;
+        }
+
+        .location-icon{
+            float: left;
+        }
+
+        .location-content{
+            float: left;
+            margin-left: 10px;
+        }
+
+        .location-icon2{
+            float: left;
+        }
+
+        .location-content2{
+            float: left;
+            margin-left: 10px;
+        }
+
+        .location-icon3{
+            float: left;
+        }
+
+        .location-content3{
+            float: left;
+            margin-left: 10px;
+        }
+
+        .demo{
+            clear: both;
+            line-height: 30px;
+        }
+    }
+
+    .center-form{
+        width: 32%;
+
+
+        .submit1{
+            width: 100%;
+            height: 60px;
+            background-color: #EEF9FF;
+            border: 0px;
+            position: relative;
+            top: 16px;
+            padding: 20px;
+            font-size: 16px;
+            color:white;
+            background-color: #06A3DA;
+            font-family: "Jost",sans-serif;
+            transition: 0.5s;
+        }
+
+        .submit1:hover{
+            background-color: #F57E57;
+            color: #000;
+            cursor: pointer;
+        }
+        input{
+            width: 100%;
+            height: 60px;
+            background-color: #EEF9FF;
+            border: 0px;
+            margin-bottom: 20px;
+            padding: 20px;
+            font-size: 16px;
+            font-family: "Jost",sans-serif;
+        }
+
+
+
+
+
+        textarea{
+            width: 100%;
+            height:130px;
+            background-color: #EEF9FF;
+            border: 0px;
+            padding: 20px;
+            font-size: 18px;
+            
+        }
+    }
+
+    .right-location{
+        width: 32%;
+
+        iframe{
+            width: 100%;
+        }
+    }
+}
+// contact end here 
+
+//  Footer starts here 
+
+footer{
+    background-color: #000;
+    width: 100%;
+
+
+    p{
+        text-align: center;
+        padding: 25px;
+        color: #fff;
+        font-family: "Jost", sans-serif;
+    }
+}
+
+// Footer end here 
+
+// Media Queries Starts here 
+
+@media only screen and (max-width:1130px){
+
+    .about-container .about-left h1{
+        font-size: 40px;
+        margin: 15px 0px;
+        line-height: 45px;
+    }
+
+    .service .service-right h5::before{
+        left: 198px;
+    }
+
+    .about-container .about-left h3{
+        font-size: 20px;
+    }
+
+    .about-container .about-left a{
+        font-size: 15px;
+    }
+
+    .container-fluid-2 .certification-left h1 {
+        font-size: 40px;
+        margin-bottom: 35px;
+    }
+
+    .service .service-right h1 {
+        font-size: 45px;
+        padding: 7px 0px 22px;
+    
+    }
+
+    .pracing .pracing-content h1 {
+        font-size: 40px;
+        margin: 30px 0px;
+    }
+
+    .pracing .pracing-content p {
+        margin-bottom: 20px;
+    }
+
+    .pracing .pracing-content h3 {
+        margin-bottom: 15px;
+    }
+
+    .team .team-1 ul{
+        margin-left: 65px;
+    }
+
+    .team .team-text h5::before{
+        left: 185px;
+    }
+
+    .time .right h1{
+        margin-top: 20px;
+    }
+
+    .time .right h3{
+        margin-bottom: 20px;
+    }
+
+    .top-header .top-right .message-box::after{
+        z-index: -1;
+    }
+
+    .top-header .top-right .message-box{
+        z-index: +1;
+    }
+
+    .contact .left-text p {
+        font-size: 16px;
+    }
+
+    .contact .left-text h1 {
+        font-size: 35px;
+        padding: 12px 0px;
+    }
+
+    .contact .left-text h4 {
+        font-size: 16px;
+    }
+
+    .contact .left-text h5::before{
+        left: 185px;
+    }
+
+    .pracing .carousel-content .item-1-content h1{
+        left: 87px;
+    }
+
+    .pracing .carousel-content .item-1-content .text-content a{
+        left: 35px;
+    }
+
+    .about-container .about-left h5::before{
+        left: 152px;
+    }
+
+    .pracing .pracing-content h5::before{
+        left: 200px;
+    }
+
+
+}
+
+@media only screen and (max-width:1050px){
+    .text h1 {
+        font-size: 4rem;
+        line-height: 96px;
+    }
+
+    .contact .left-text{
+        padding: 39px;
+    }
+
+    .time .right h3 {
+        margin-bottom: 30px;
+        font-size: 26px;
+    }
+
+    .time .right h1 {
+        font-family: "Jost", sans-serif;
+        font-size: 30px;
+        margin-top:34px;
+    }
+
+    .about-container .about-left h1 {
+        font-size: 31px;
+        margin: 15px 0px;
+    }
+
+    .about-container .about-left h3 {
+        font-size: 17px;
+    }
+
+    .about-container .about-left p {
+        font-size: 14px;
+    }
+
+    .about-container .about-left a {
+        position: relative;
+        bottom: 20px;
+    }
+
+    .about-container{
+        padding-bottom: 80px;
+    }
+
+    .container-fluid-2 .certification-left h1{
+        font-size: 35px;
+    }
+
+    .service .service-right h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .about-container .about-left h5::before{
+        left: 147px;
+    }
+
+    .service .service-right h5::before{
+        left: 194px;
+    }
+
+    .second-text .content{
+        top: 35px;
+    }
+
+    .dental .dental-text .text-content h1{
+        font-size: 40px;
+    }
+
+    .pracing .pracing-content h1{
+        margin: 5px 0px;
+    }
+
+    .pracing .pracing-content h5::before{
+        left: 196px;
+    }
+
+    .team .team-text h1{
+        font-size: 35px;
+    }
+
+    .team .team-text h5::before{
+        left: 180px;
+    }
+
+    .team .team-1 ul{
+        margin-left: 55px;
+    }
+
+    .pracing .carousel-content .top .owl-prev{
+        left: -115px;
+    }
+
+    .pracing .carousel-content .top .owl-next{
+        right:-115px;
+    }
+
+    .pracing .carousel-content .item-1-content h1{
+        left: 74px;
+    }
+
+    
+
+}
+
+@media only screen and (max-width:992px){
+
+    .about-container .about-left h1 {
+        font-size: 30px;
+        margin: 10px 0px;
+        line-height: 35px;
+    }
+
+    .about-container .about-left h5, .service .service-right h5, .pracing .pracing-content h5 {
+        font-size: 18px;
+    }
+
+    .about-container .about-left a{
+        padding: 15px 35px;
+    }
+
+    .service .service-right h1 {
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+
+    .service .service-right h5::after, .pracing .pracing-content h5::after{
+        bottom: 11px;
+        left: 137px;
+    }
+
+    .service .service-right h5::before, .pracing .pracing-content h5::before{
+        bottom: 11px;
+        left: 180px;
+    }
+
+
+    .team .team-text h5{
+        font-size: 18px;
+    }
+
+    .about-container .about-left h5::after{
+        bottom: 12px;
+        left: 96px;
+    }
+
+    .about-container .about-left h5::before{
+        left: 140px;
+        bottom: 12px;
+    }
+
+    .pracing .carousel-content .item-1-content h1{
+        font-size: 22px;
+    }
+
+    .pracing .carousel-content .item-1-content{
+        padding: 30px;
+    }
+
+    .pracing .carousel-content .item-1-content h1{
+        bottom: 250px;
+        left: 65px;
+    }
+
+    .pracing .carousel-content .item-1-content .text-content a{
+        left: 28px;
+    }
+
+    .pracing .pracing-content h1{
+        margin: 15px 0px;
+        line-height: 45px;
+        font-size: 35px;
+    }
+
+    .pracing .pracing-content h2{
+        font-size: 30px;
+    }
+
+    .team .team-text h5::before{
+        left: 165px;
+        bottom: 11px;
+    }
+
+    .team .team-text h5::after {
+        bottom: 11px;
+        left: 125px;
+    }
+
+    .team .team-1 ul{
+        margin-left: 65px;
+        margin-top: -22px;
+    }
+
+    .team .team-1 ul li a {
+        padding: 5px 0px;
+        font-size: 15px;
+    }
+
+    .team .team-1 .img-text p{
+        font-size: 14px;
+    }
+
+    .team .team-1 .img-text h3{
+        font-size: 20px;
+    }
+
+    .team .team-text h1{
+        font-size: 30px;
+    }
+
+    .team .team-text .btn a{
+        padding: 12px 35px;
+    }
+}
+
+@media only screen and (max-width:900px){
+
+    .top-header{
+        display: none;
+    }
+
+    .time .center h3{
+        font-size: 25px;
+    }
+
+    .time .left .btn button, .time .center button{
+        font-size: 13px;
+    }
+    .time .right h1, .time .right h3{
+        font-size: 20px;
+    }
+
+    .time .center .date, .time .center .select{
+        font-size: 13px;
+    }
+
+    .time .left h3, .time .center h3{
+        font-size: 20px;
+    }
+
+    .time .left .timing, .time .left .day{
+        line-height: 35px;
+    }
+
+    .dental .dental-text{
+        max-width: 600px;
+    }
+
+    .container-fluid-2 .certifiation-right form h1{
+        font-size: 35px;
+       
+    }
+
+    .container-fluid-2 .certifiation-right form .service1{
+
+        margin-left: 8px;
+    }
+
+    .container-fluid-2 .certifiation-right form .select-service{
+        font-size: 13px;
+    }
+
+    .container-fluid-2 .certification-left h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+        line-height: 45px;
+    }
+
+    .service .service-right h1{
+        padding: 7px 0px 5px;
+    }
+
+    .second-text .content{
+        top: 20px;
+    }
+
+    .dental .dental-text .text-content h1{
+        font-size: 35px;
+    }
+
+    // .pracing .carousel-content .item-1-content{
+    //     padding: 15px;
+    // }
+
+    .pracing .carousel-content .item-1-content h2{
+        font-size: 20px;
+    }
+
+    .pracing .carousel-content .item-1-content h3{
+        font-size: 13px;
+    }
+
+    .pracing .carousel-content .item-1-content h1 {
+        bottom: 235px;
+        left: 52px;
+    }
+
+    .pracing .carousel-content .item-1-content .text-content a{
+        left: 14px;
+    }
+
+    .pracing .pracing-content h1 {
+        margin: 15px 0px;
+        line-height: 45px;
+        font-size: 30px;
+    }
+
+    .team .team-text{
+        width: 49%;
+    }
+
+    .team .team-1{
+        width: 49%;
+    }
+
+    .team .team-1 ul li a {
+        padding: 5px 3px;
+        font-size: 20px;
+    }
+
+    .team .team-1 ul{
+        margin-left: 118px;
+    }
+
+    .team .team-text h1 {
+        font-size: 45px;
+        line-height: 65px;
+    }
+
+    .team .team-text h5::before{
+        left: 185px;
+    }
+
+    .detail .items {
+        width: 49%;
+        margin-bottom: 35px;
+    }
+
+    .detail .same {
+        padding: 0px 15px 40px;
+    }
+
+    header nav ul li {
+        float: unset;
+        list-style: none;
+    }
+
+    header nav ul {
+        float: left;
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        background:white;
+        padding-left: 15px;
+        line-height: 50px;
+        padding-bottom: 15px;
+    }
+
+    header {
+        border-bottom: 3px solid whitesmoke;
+    }
+    
+    header nav ul li ul li {
+        float: none;
+        line-height: 30px;
+        display: block;
+        padding: 10px 35px;
+        text-align: center;
+        border-bottom: 0px;
+    }
+
+    header nav ul li ul {
+        position: absolute;
+        right: 0px;
+        background-color: #EEF9FF;
+    }
+
+    .contact .left-text h1 {
+        font-size: 30px;
+        padding: 36px 0px;
+        line-height: 37px;
+    }
+
+    .contact .left-text {
+        padding: 39px 15px;
+    }
+
+    header .fa-navicon{
+        font-size: 18px;
+        padding: 5px 8px;
+        margin: 10px 20px;
+        color: #06A3DA;
+        border: 1px solid #06A3DA;
+    }
+
+    header .logo{
+        margin-left: 15px;
+    }
+
+    header .fa-navicon {
+        font-size: 25px;
+        padding: 3px 8px;
+        margin: 18px 15px;
+        border-radius: 2px;
+        display: block !important;
+    }
+
+    .about-bg .about-text a{
+        font-size: 20px;
+    }
+
+    .about-bg .about-text h1{
+        font-size: 40px;
+    }
+
+    
+    
+}
+
+@media only screen and (max-width:800px){
+    .text{
+        top: 210px;
+    }
+
+    .pracing .carousel-content .top .owl-prev, .pracing .carousel-content .top .owl-next{
+        display: block !important;
+    }
+
+    .time .left{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .time .center{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .time .right{
+        width: 100%;
+    }
+
+    .about-container .about-left{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .about-container .about-right{
+        width: 100%;
+    }
+
+    .container-fluid-2{
+        padding-bottom: 80px;
+    }
+
+    .container-fluid-2 .certification-left{
+        width: 100%;
+        margin-bottom: 80px;
+
+    }
+
+    .container-fluid-2 .certifiation-right{
+        width: 100%;
+    }
+
+    .about-container .about-left h5::before{
+        left: 154px;
+    }
+
+    .service .service-left{
+        width: 49%;
+        margin-bottom: 35px;
+    }
+
+    .service .main-left {
+
+        margin-top: 20px;
+        width: 48% !important;
+    }
+
+    .service{
+        padding: 80px 15px 20px;
+        margin-bottom: -40px;
+    }
+    
+    .second-service-first {
+        width: 49%;
+        margin-bottom: 20px;
+    }
+    
+    .service .service-right{
+        width: 49%;
+    }
+
+
+    .service .service-right h5::before, .pracing .pracing-content h5::before{
+        left: 195px;
+    }
+
+    .second-text .content {
+        position: relative;
+        top: 0px;
+        padding: 80px 50px;
+    }
+
+    .second-text{
+        width: 100%;
+    }
+
+    .pracing .pracing-content{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .pracing .carousel-content{
+        width: 100%;
+    }
+
+    .service .service-right h1 {
+        font-size: 30px;
+        line-height: 38px;
+        padding: 25px 0px 20px;
+    }
+
+    .service .service-right h5::after{
+        width: 13%;
+    }
+
+    .service .service-right h5::before{
+        width: 3%;
+        left: 190px;
+    }
+
+    .pracing .pracing-content h5::before{
+        left: 190px;
+        width: 2%;
+    }
+
+    .pracing .pracing-content h5::after{
+        width: 6%;
+    }
+
+    .pracing .carousel-content .item-1-content h1 {
+        bottom: 308px;
+        left: 130px;
+    }
+
+    .pracing .carousel-content .item-1-content {
+        padding: 60px;
+    }
+
+    .pracing .carousel-content .item-1-content h3{
+        font-size: 16px;
+    }
+
+    .pracing .carousel-content .item-1-content .text-content a{
+        left: 60px;
+        top: 70px;
+    }
+
+    .team .team-text h1{
+        font-size: 35px;
+    }
+
+    .team .team-text h5::before {
+        left: 176px;
+    }
+
+    .team .team-1 ul{
+        margin-top: -26px;
+        margin-left: 90px;
+    }
+
+    .team .team-1{
+        margin-bottom: 20px;
+    }
+
+    .team .team-text{
+        margin-bottom: 20px;
+    }
+
+    .contact .left-text{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .contact .center-form{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .contact .right-location{
+        width: 100%;
+    }
+
+    .contact .left-text h5::after{
+        width: 6%;
+    }
+
+    .contact .left-text h5::before{
+        width: 2%;
+    }
+}
+
+@media only screen and (max-width:768px){
+
+    .service .service-right h1{
+        padding: 25px 0px 6px;
+    }
+
+    .pracing .carousel-content .item-1-content h1{
+        left: 118px;
+    }
+
+    .pracing .carousel-content .item-1-content .text-content a{
+        left: 52px;
+    }
+
+    .container-fluid-2 .certifiation-right form .select-service{
+        font-size: 15px;
+    }
+
+    .container-fluid-2 .certifiation-right form .service1{
+        margin-left: 20px;
+    }
+
+    .team .team-1 ul{
+        margin-left: 85px;
+    }
+
+    .team .team-text h1{
+        line-height: 55px;
+    }
+
+    // .time .left .btn button, .time .center button{
+    //     font-size:18px ;
+    // }
+}
+
+
+@media only screen and (max-width:740px){
+
+    .container-fluid-2 .certifiation-right{
+        padding: 50px 40px 80px 50px;
+    }
+
+    .container-fluid-2 .certifiation-right form .btn{
+        width: 98.5%;
+    }
+
+    .container-fluid-2 .certifiation-right form .service1{
+        margin-left: 9px;
+    }
+
+    .service .service-right h1 {
+        padding: 22px 0px 0px;
+    }
+
+    .pracing .carousel-content .item-1-content .text-content a{
+        left: 45px;
+    }
+
+    .pracing .carousel-content .item-1-content h1{
+        bottom: 306px;
+    }
+
+    .pracing .carousel-content .item-1-content h1{
+        margin-left: 80px;
+    }
+
+    // .time .left .btn button, .time .center button{
+    //     font-size:18px ;
+    // }
+}
+
+@media only screen and (max-width:630px){
+
+    .text h1 {
+        font-size: 3.5rem;
+        line-height: 96px;
+    }
+
+    .time .left .btn button, .time .center button {
+        font-size: 17px;
+    }
+
+    .about-container .about-left h5::before {
+        left: 143px;
+    }
+
+    .service .service-right h5::before {
+        width: 4%;
+        left: 180px;
+    }
+
+    .service .main-left figure figcaption h3{
+        font-size: 15px;
+    }
+
+    .service .service-right h1 {
+        padding: 6px 0px 0px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .second-text .content{
+        top: -4px;
+    }
+
+    .dental .dental-text .text-content h1{
+        font-size: 30px;
+    }
+
+    .pracing .pracing-content h5::before{
+        left: 178px;
+    }
+
+    .pracing .carousel-content .item-1-content{
+        padding: 28px;
+    }
+
+    .pracing .carousel-content .item-1-content h1{
+        bottom: 235px;
+        margin-left: -29px;
+    }
+
+    .pracing .carousel-content .item-1-content .text-content a{
+        top: 38px;
+    }
+
+    .pracing .carousel-content .item-1-content h3{
+        font-size: 14px;
+    }
+
+    .testimonial .testimonial-content p{
+        font-size: 15px;
+    }
+
+    .team .team-1 ul{
+        margin-left: 50px;
+    }
+
+    .team .team-text h1{
+        line-height: 45px;
+        font-size: 30px;
+    }
+
+    .team .team-text h5::after {
+
+        width: 24%;
+    }
+
+    .contact .left-text h5{
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .contact .left-text h5::after {
+        width: 8%;
+        bottom: 10px;
+        left: 110px;
+    }
+
+    .contact .left-text h5::before {
+        bottom: 10px;
+        left: 160px;
+        width: 2%;
+    }
+
+
+    
+}
+
+@media only screen and (max-width:550px){
+
+    .text h1{
+        
+        font-size: 3rem;
+    }
+
+    .contact .left-text h5::after{
+        width: 10%;
+    }
+
+    .about-container .about-left h5::after{
+        width: 8%;
+    }
+
+    .service .service-right {
+
+        width: 100%;
+    }
+
+    .service .service-left{
+        width: 100%;
+    }
+
+    .service .main-left{
+
+        width: 100% !important;
+    }
+
+    .second-service-first{
+        width: 100%;
+    }
+
+    .dif{
+        margin-bottom: 40px;
+    }
+
+    .dif2{
+        margin-bottom: 20px;
+    }
+
+    .service .main-left figure figcaption h3{
+        font-size: 17px;
+    }
+
+    .dental .dental-text .text-content {
+        padding: 30px 30px 50px;
+        color: white;
+        text-align: center;
+    }
+
+    .pracing .pracing-content h5::after{
+        width: 7%;
+    }
+
+    .pracing .carousel-content .item-1-content h3 {
+        float: unset;
+        position: relative;
+        top: 12px;
+    }
+
+    .service .service-right h5::before {
+        width: 3%;
+        left: 182px;
+    }
+
+    .service .service-right h5::after {
+        
+        width: 8%;
+    }
+
+    .service .service-right h1 {
+        padding: 6px 0px 20px;
+        font-size: 34px;
+        line-height: 46px;
+    }
+
+    .pracing .carousel-content .item-1-content h1 {
+        bottom: 235px;
+        margin-left: 90px;
+    }
+
+    .pracing .carousel-content .item-1-content .text-content a{
+        left: 170px;
+    }
+
+    .testimonial .testimonial-content p{
+        text-align: justify;
+    }
+
+    .testimonial .testimonial-content{
+        padding: 45px 45px 20px;
+    }
+
+    .testimonial .testimonial-content .top-1 .owl-prev {
+        position: absolute;
+        top: 12%;
+        left: -165px;
+        font-size: 18px;
+    }
+
+    .testimonial .testimonial-content .top-1 .owl-next {
+        position: absolute;
+        right: -165px;
+        top: 12%;
+    }
+
+    .team .team-text{
+        width: 100%;
+    }
+
+    .team .team-1{
+        width: 100%;
+    }
+
+    .team .team-text h5::before{
+        width: 3%;
+        left: 185px;
+    }
+
+    .team .team-text h5::after{
+        width: 13%;
+    }
+
+    .team .team-1 ul {
+        margin-left: 163px;
+    }
+
+    .pracing .carousel-content .top .owl-prev {
+        top: 59%;
+    }
+}
+
+
+@media only screen and (max-width:450px){
+
+    .text h1{
+        font-size: 2.5rem;
+        line-height: 80px;
+    }
+
+    .contact .left-text h5::after{
+        width: 12%;
+    }
+
+    .contact .left-text h1 {
+        font-size: 25px;
+        line-height: 0px;
+    }
+
+    .contact .left-text h5::before {
+        bottom: 10px;
+        left: 160px;
+        width: 3%;
+    }
+
+    .text h5{
+        font-size: 16px;
+    }
+
+    .text .orange{
+        padding: 15px 35px;
+    }
+
+    .text .blue {
+        padding: 15px 35px;
+    }
+
+    .text{
+        top: 230px;
+    }
+
+    .top .owl-next, .top .owl-prev{
+        display: none !important;
+    }
+
+    .pracing .carousel-content .top .owl-prev{
+        display: block !important;
+    }
+
+    .pracing .carousel-content .top .owl-next{
+        display: block !important;
+    }
+
+    .about-container .about-left h5::after{
+        width: 10%;
+    }
+
+    .container-fluid-2 .certifiation-right{
+        padding: 50px 20px 80px 20px;
+    }
+
+    .container-fluid-2 .certifiation-right form .btn{
+        width: 100%;
+    }
+
+    .container-fluid-2 .certification-left p{
+        text-align: justify;
+    }
+
+    .container-fluid-2 .certification-left h1{
+        font-size: 26px;
+    }
+
+    .container-fluid-2 .certifiation-right form h1{
+        font-size: 28px;
+    }
+
+    .about-container .about-left h5::before{
+        left: 143px;
+        width: 3%;
+    }
+
+    .service .service-right h5::after{
+        width: 10%;
+    }
+
+    .service .service-right h1 {
+        padding: 25px 0px 20px;
+    }
+
+    .dental{
+        padding: 80px 20px !important;
+    }
+    
+    .pracing .pracing-content h5::after{
+        width: 9%;
+    }
+
+    .pracing .carousel-content .item-1-content h1{
+        margin-left: 40px;
+    }
+
+    .pracing .carousel-content .item-1-content .text-content a{
+        left:120px;
+    }
+
+    .pracing .carousel-content .top .owl-next{
+        top: 46.5%;
+    }
+
+    .pracing .carousel-content .top .owl-prev{
+        top: 60.5%;
+    }
+
+    .team .team-text h5::after{
+        width: 17%;
+    }
+
+    .team .team-1 ul{
+        margin-left: 112px;
+    }
+
+    .detail .form .form-inner .submit {
+        width: 21%;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .detail .form .form-inner .email {
+        width: 79%;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .detail .items{
+        width: 100%;
+    }
+
+    .testimonial{
+        padding: 80px 20px;
+    }
+
+    .testimonial .testimonial-content .top-1 .owl-prev {
+        position: absolute;
+        top: 7%;
+        left: -160px;
+    }
+
+    .testimonial .testimonial-content .top-1 .owl-next {
+        position: absolute;
+        right: -160px;
+        top: 9%;
+    }
+
+}
+
+@media only screen and (max-width:427px){
+    .dental .dental-text .text-content .blue, .dental .dental-text .text-content .white{
+        padding: 12px 25px;
+    }
+
+    .dental .dental-text .text-content h1{
+        font-size: 25px;
+    }
+
+    .dental .dental-text .text-content p{
+        font-size: 14px;
+    }
+
+    .pracing .carousel-content .item-1-content .text-content a{
+        left: 110px;
+    }
+
+    .testimonial .testimonial-content .top-1 .owl-prev, .testimonial .testimonial-content .top-1 .owl-next{
+        top: 12%;
+    }
+
+    .team .team-text h5::before {
+        width: 4%;
+        left: 180px;
+    }
+
+    .team .team-text h1 {
+        line-height: 40px;
+        font-size: 25px;
+    }
+
+    .team .team-text{
+        padding: 50px 50px 70px;
+    }
+
+    .team .team-1 ul {
+        margin-left: 102px;
+    }
+
+    .pracing .carousel-content .item-1-content h1{
+        margin-left: 25px;
+    }
+
+    .pracing .carousel-content .item-1-content .text-content a {
+        left: 104px;
+    }
+}
+
+@media only screen and (max-width:405px){
+    .text h1{
+        font-size: 2.2rem;
+    }
+
+    .contact .left-text h5::after {
+        width: 14%;
+    }
+
+    .text h5{
+        font-size: 14px;
+    }
+
+    .about-container .about-left h5::after {
+        bottom: 10px;
+        left: 100px;
+    }
+
+    .about-container .about-left h5::before{
+        bottom: 10px;
+    }
+
+    .about-container .about-left h1{
+        margin: 18px 0px;
+    }
+
+    .about-container .about-left h3{
+        margin-bottom: 16px;
+    }
+
+    .about-container .about-left .achievment{
+        padding: 30px 0px;
+    }
+
+    .about-container .about-left h5, .service .service-right h5, .pracing .pracing-content h5{
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .about-container .about-left h5::after{
+        width: 13%;
+        left: 90px;
+    }
+
+    .about-container .about-left h1{
+        font-size: 24px;
+    }
+
+    .container-fluid-2 .certifiation-right {
+        padding: 40px 10px 60px 10px;
+    }
+
+    .container-fluid-2 .certifiation-right form .select-service{
+        font-size: 13px;
+    }
+
+    .container-fluid-2 .certification-left{
+        padding: 80px 0px 0px 0px;
+    }
+
+    .about-container .about-left h3, .about-container .about-left p {
+        text-align: justify;
+    }
+
+    .service .service-right h5::after{
+        width: 13%;
+        bottom: 10px;
+        left: 128px;
+    }
+
+    .service .service-right h5::before{
+        bottom: 10px;
+    }
+
+    .service .service-right h1{
+        font-size: 28px;
+    }
+
+    .second-text .content{
+        padding: 30px 20px;
+    }
+
+    .second-text .content h1{
+        font-size: 25px;
+    }
+
+    .pracing .pracing-content h5::after{
+        width: 13%;
+        bottom: 10px;
+        left: 124px;
+    }
+    
+    .pracing .pracing-content h5::before{
+        width: 3%;
+        bottom: 10px;
+    }
+
+    .pracing .pracing-content p{
+        text-align: justify;
+    }
+
+    .pracing .pracing-content h2{
+        font-size: 25px;
+    }
+
+    .pracing .carousel-content .item-1-content h1{
+        margin-left: 15px;
+    }
+
+    .pracing .carousel-content .item-1-content .text-content a{
+        left: 100px;
+    }
+
+    .testimonial .testimonial-content .top-1 .owl-prev, .testimonial .testimonial-content .top-1 .owl-next{
+        top: 10%;
+    }
+
+    .team .team-text h5 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .team .team-text {
+        padding: 30px 20px 34px;
+    }
+
+    .team .team-text h5::after {
+        bottom: 10px;
+        left: 115px;
+    }
+
+    .team .team-text h5::before{
+        left: 175px;
+        bottom: 10px;
+    }
+
+    .team .team-1 ul{
+        margin-left: 88px;
+    }
+
+    .detail .form .form-inner .submit {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .detail .form .form-inner .email {
+        font-size: 12px;
+    }
+
+    .detail .items h2{
+        font-size: 20px;
+    }
+
+    .detail .items a{
+        font-size: 14px;
+    }
+
+    footer p{
+        font-size: 12px;
+    }
+
+    .time .left .btn button, .time .center button{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width:385px){
+
+    .container-fluid-2 .certifiation-right form .select-service{
+        width: 100%;
+    }
+
+    .container-fluid-2 .certifiation-right form .service1{
+        margin-left: unset;
+    }
+
+    .dental .dental-text .text-content p {
+        margin-bottom: 40px;
+        margin-top: 15px;
+    }
+
+    .dental .dental-text .text-content .blue, .dental .dental-text .text-content .white {
+        padding: 10px 10px;
+    }
+
+    .pracing .carousel-content .top .owl-next {
+        top: 45.5%;
+    }
+
+    .pracing .carousel-content .item-1-content h1{
+        margin-left: 5px;
+    }
+
+    .pracing .carousel-content .item-1-content .text-content a{
+        left: 89px;
+    }
+
+    .team .team-1 ul{
+        margin-left: 80px;
+    }
+}
+
+@media only screen and (max-width:361px){
+
+    .text .orange {
+        padding: 15px 30px;
+    }
+
+    .contact .left-text h5::after {
+        width: 15%;
+    }
+
+    .text .blue{
+        padding: 15px;
+    }
+
+    .text h1{
+        font-size: 2rem;
+    }
+
+    .about-container .about-left .achievment .achievment-left{
+        width: 100%;
+    }
+
+    .about-container .about-left a {
+        padding: 12px 25px;
+    }
+
+    .about-container .about-left h5::before{
+        left: 138px;
+    }
+
+    .service .service-right h5::after{
+        width: 14%;
+    }
+
+    .dental .dental-text .text-content p{
+        text-align: justify;
+    }
+
+    .pracing .pracing-content h5::after{
+        width: 15%;
+    }
+
+    .pracing .carousel-content .item-1-content h1 {
+
+        margin-left: -2px;
+    }
+
+    .pracing .carousel-content .item-1-content .text-content a{
+        left: 77px;
+    }
+
+    .testimonial .testimonial-content .top-1 .owl-prev, .testimonial .testimonial-content .top-1 .owl-next{
+        top: 14%;
+    }
+
+    .team .team-text h5::after{
+        width: 19%;
+    }
+
+    .team .team-text .btn a {
+        padding: 12px 25px;
+    }
+
+    .team .team-1 ul{
+        margin-left: 66px;
+    }
+
+    .detail .form .form-inner .submit{
+        font-size: 11px;
+    }
+
+}
+
+    
+    
